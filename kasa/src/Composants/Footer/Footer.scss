@@ -1,0 +1,23 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+
+footer{
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    
+}
+
+.footer__container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px 30px 20px 30px;
+}
+
+.footer__container img{
+    object-fit: contain;
+    max-height: 40px;
+    width: auto;
+}

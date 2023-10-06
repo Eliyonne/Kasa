@@ -1,17 +1,18 @@
 import React from "react";
-import './index.css';
-// import reportWebVitals from './reportWebVitals';
-// import {BrowserRouter} from 'react-router-dom';
+import './App.scss';
 import {Routes, Route} from 'react-router-dom';
 import Home from "./Pages/Home";
 import Page404 from './Pages/Page404';
 import Apropos from './Pages/Apropos';
 import Logement from './Pages/Logement';
+import Navbar from "./Composants/Navbar/Navbar";
+
 
 
 function App() {
   return (
     <div className="App">
+    <Navbar />
     <Routes>
       <Route path="/" element={<Home />}/>
       <Route path="/404" element={<Page404 />}/>
@@ -20,7 +21,6 @@ function App() {
       <Route path="/fiche-logement/*" element={<Page404 />}/>
       <Route path="/*" element={<Page404 />}/>
     </Routes>
-      
     </div>
   );
 }
