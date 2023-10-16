@@ -1,0 +1,50 @@
+.Faq__container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+details {
+    width: 80%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin: auto;
+    border-radius: 5px;
+    background: #FF6060;
+}
+
+
+summary {
+    padding: 1.5rem 1rem;
+    display: block;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    outline: transparent;
+    text-align: left;
+    font-family:'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 142%;
+}
+
+
+details[open] > summary:before {
+    transform: rotate(180deg);
+}
+
+summary:before {
+    content: "";
+    background-image: url("https://assets.codepen.io/7212043/rounded-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    transform: rotate(0deg);
+    transform-origin: 1rem 50%;
+    transition: 0.25s transform ease;
+}

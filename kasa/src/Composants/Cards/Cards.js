@@ -1,5 +1,7 @@
 import React from 'react';
-import "../Cards/Cards.js"
+import "../Cards/Cards.scss";
+import { Link } from "react-router-dom";
+// import Logement from "../Logement/Logement.js"
 
 function Cards() {
     const logements = require("../../ressources/logements.json");
@@ -10,7 +12,12 @@ function Cards() {
             logements.map((logement) => {
                     console.log(logement);
                     return(
-                        <logement title={logement.title} cover={logement.cover}/>
+                        <div className='Cards'>
+                            <Link to='/fiche-logement/{id}'>
+                                <img className='Card__image' src={logement.cover} alt="" />
+                                <p className='Vignette'>{logement.title}</p>
+                            </Link>
+                        </div>
                     )
                 })
             }

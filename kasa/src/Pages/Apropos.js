@@ -1,9 +1,12 @@
 import React from "react";
+import APROPOS from "../ressources/img/Apropos.png"
+import FAQ from "../Composants/FAQ/FAQ";
 
 export default function Apropos(){
     return (
         <div>
-            <h1>Test 123</h1>
+            <img src={APROPOS} alt="Un fond" className='Homeimg'/>
+            <FAQ />
         </div>
     )
 }

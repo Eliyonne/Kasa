@@ -1,6 +1,41 @@
+
 .Card__container{
     border-radius: 25px;
     background-color: #F6F6F6;
     margin-bottom: 50px;
-    padding: 100px;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+
+}
+
+.Cards{
+    width: 30%;
+    border-radius: 25px;
+    position: relative;
+}
+
+.Card__image{
+    height: 340px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px;
+}
+
+.Vignette{
+    position: absolute;
+    bottom: 16px;
+    left: 10px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 140%;
+    color: #fff;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    max-width: 300px;
 }
